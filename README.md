@@ -1,8 +1,3 @@
-# IBM Full Stack Software Developer
+# ONLINE CODING COURSES
 
-This repository contains the projects & documents from the Coursera professional certificate course archived by the user. 
-
-- [Software Engineering](#software-engineering)
-- [Cloud Computing](#cloud-computing)
-- [HTML, CSS, & Javascript](#html-css-&-javascript)
-
+This repository contains the projects, documents, resources from the Coursera, Datacamp, etc. courses archived by the user. 
