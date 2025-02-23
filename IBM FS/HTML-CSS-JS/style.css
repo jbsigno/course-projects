@@ -5,7 +5,9 @@
 :root {
     --green: #00bf63;
     --black: #131313;
-    --pad: 0 25px;
+    --lgray: #4b4b4b;
+    --dgray: #212121;
+    --pad: 0 5vh;
 }
 
 body, html{
@@ -73,7 +75,6 @@ body, html{
 }
 
 .about .title-t{
-
     width: 60%;
     padding: 0 0 0 8vh;
     display: flex;
@@ -119,101 +120,171 @@ body, html{
 /* >> SKILLS SECTION */
 .skills{
     border: 1px red solid;
-    padding: var(--pad);
-    
-
+    padding: 5vh;
 }
 .skills .title-s{
     border: 1px red solid;
     color: var(--black);
-    font-family: "Poppins", serif;
+    font-family: "League Spartan",serif;
     font-weight: 800;
     font-style: normal;
+    font-size: 6vh;
+    margin: 0;
 }
 .skills .box-cont{
     border: 1px red solid;
     display: flex;
     flex-wrap: wrap;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
 }
 
 .box-cont .box{
-    border: 1px red solid;
-    width: 150px;
-    height: 150px;
-    margin: 0 50px 50px 0;
+    width: 200px;
+    height: 200px;
+    margin: 50px 50px 0 0;
+    padding: 1vh;
     justify-content: center;
     text-align: center;
+    font-family: "Poppins", serif;
+    border-radius: 14px;
+    background-color: white;
+    box-shadow: 0 0 10px var(--lgray);
+}
+
+.box-cont .box .b-img{
+    width: 45%;
+    margin: 1vh 0
+}
+
+.box-cont .box .b-name{
+    font-size: 3vh;
+    margin: 0
+}
+
+.box-cont .box .b-desc{
+    font-size: 2vh;
+    margin: 0
 }
 
 /* >> PROJECT SECTION */
 .projects {
     border: 1px red solid;
-    padding: var(--pad);
+    padding: 5vh;
 }
 
 .projects .title-p{
-    border: 1px red solid;
     color: var(--black);
-    font-family: "Poppins", serif;
+    font-family: "League Spartan",serif;
     font-weight: 800;
     font-style: normal;
+    margin: 0;
+    font-size: 6vh;
 }
 
 .projects .box{
-    border: 1px red solid;
-    width: 100%;
+    font-family: "Poppins", serif;
+    padding: 2vh 4vh;
+    margin: 0;
+}
+
+.projects .box .proj, .proj-a {
+    margin:0;
 }
 
 /* >> RECOMMENDATION SECTION */
 .recommend{
     border: 1px red solid;
     padding: var(--pad);
+    background-color: var(--black);
+}
+
+.recommend .title-r{
+    color: white;
+    font-family: "League Spartan",serif;
+    font-size: 6vh;
 }
 
 .recommend .cont-box{
     border: 1px red solid;
     display: flex;
+    flex-wrap: wrap;
+    font-family: "Poppins", serif;
+    color: white;
+    font-size: 2vh;
+    justify-content: center;
 }
 
-.recommend .box{
-    border: 1px red solid;
-    width: 250px;
+.recommend .cont-box .box{
+    border: 1px white solid;
+    width: 40vh;
+    max-width: 50vh;
+    margin: 3vh 3vh 0 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 6px;
+    padding: 0 2vh;
+    flex-direction: column;
 }
 
-.recommend .rec{
-    border: 1px red solid;
+.recommend .box .q{
+    display: flex;
+    align-self: start;
+    margin: 2vh  0 -3vh 0;
+    font-family: "League Spartan",serif;
+    font-size: 7vh;
+    color: var(--green);
+}
+
+.recommend .box .rec{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 0 4vh 0;
 }
 
-.rec .box{
+.recommend .rect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 4vh 0;
+}
+
+.rect .box{
+    
     width: 100%;
-    max-width: 500px; /* Optional */
-    padding: 20px;
-    border: 2px solid red;
-
+    max-width: 100vh; /* Optional */
+    margin: 9vh 0 0 0;
+    padding: 4vh 7vh;
+    background-color: var(--dgray);
+    border-radius: 14px;
 }
 
-.rec .subtitle-r{
+.rect .subtitle-r{
     border: 1px red solid;
     width: 100%;
+    font-family: "Poppins", serif;
+    color: white;
 }
 
-.rec .name-r{
+.rect .name-r{
     width: 100%;
     box-sizing: border-box;
     margin: 0 0 15px 0;
+    background-color: var(--lgray);
 }
 
-.rec .mes-r{
+.rect .mes-r{
     width: 100%;
     height: 150px;
     box-sizing: border-box;
     margin: 0 0 20px 0;
+    background-color: var(--lgray);
 }
 
-.rec .sub{
+.rect .sub{
     display: flex;
     justify-content: center;
     align-items: center;
