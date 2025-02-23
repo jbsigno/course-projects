@@ -14,21 +14,24 @@
                 <h1 class="logo-d">.</h1>
             </div>
             <div class="menu">
-                <a href="#">About Me</a>
+                <a href="#about">About Me</a>
                 <a href="#skills">Skills</a>
                 <a href="#projects">Projects</a>
                 <a href="#recommend">Recommendations</a>
             </div>
         </nav>
 
-        <section id="title" class="title">
-            <img src="#">
-
+        <section id="about" class="about">
             <div class="title-t">
-                <h1 class="name-tx">John Benedict Signo</h1>
-                <h2 class="pos-tx">Software Engineer & Designer</h2>
-                <p class="desc-tx">Lorem Ipsum</p>
+                <h2 class="t1">John Benedict Signo</h2>
+                <h1 class="t2">I'm a Software Engineer & Multimedia Designer</h1>
+                <p class="t3">
+                    A Newbie Full-stack Software Developer that specializes in Web Development, Database Management, and SDLC
+                    who also uses his creativity as a Multimedia Designer in his works.
+                </p>
             </div>
+
+            <img class="me" src="img/me.png">
         </section>
         
         <section id="skills" class="skills">
@@ -38,6 +41,24 @@
                     <img class="b-img"/>
                     <h2 class="b-name">HTML</h2>
                     <p class="b-desc">2 years experience</p>
+                </div>
+
+                <div class="box">
+                    <img class="b-img"/>
+                    <h2 class="b-name">CSS</h2>
+                    <p class="b-desc">2 years experience</p>
+                </div>
+
+                <div class="box">
+                    <img class="b-img"/>
+                    <h2 class="b-name">PHP</h2>
+                    <p class="b-desc">4 years experience</p>
+                </div>
+
+                <div class="box">
+                    <img class="b-img"/>
+                    <h2 class="b-name">C++</h2>
+                    <p class="b-desc">3 years experience</p>
                 </div>
 
                 <div class="box">
@@ -54,55 +75,48 @@
 
                 <div class="box">
                     <img class="b-img"/>
-                    <h2 class="b-name">React</h2>
-                    <p class="b-desc">1 year experience</p>
+                    <h2 class="b-name">Python</h2>
+                    <p class="b-desc">3 year experience</p>
                 </div>
 
                 <div class="box">
                     <img class="b-img"/>
-                    <h2 class="b-name">Node.js</h2>
+                    <h2 class="b-name">SQL</h2>
                     <p class="b-desc">1 year experience</p>
                 </div>
 
-                <div class="box">
-                    <img class="b-img"/>
-                    <h2 class="b-name">CSS</h2>
-                    <p class="b-desc">2 years experience</p>
-                </div>
+
             </div>
         </section>
 
         <section id="projects" class="projects">
             <h1 class="title-p">Projects</h1>
 
-            <div class="p1">
-                <h2 class="title-px1">Chatbot</h2>
+            <div class="box">
+                <h2 class="proj">AGILA</h2>
                 <ul>
                     <li>
-                        Developed a secure website integrated with chatbot for an automobile 
-                        client using HTML, CSS, JavaScript, and IBM Watson Assistant
+                        A Crime Mapping Web Application powered by a ARIMA to predict future crime trends.
                     </li>
                 </ul>
                 <br>
             </div>
 
-            <div class="p2">
-                <h2 class="title-px2">Sentiment Analyzer</h2>
+            <div class="box">
+                <h2 class="proj">FEU Bank Islands</h2>
                 <ul>
                     <li>
-                        Developed and deployed a sentiment analyzer for the box
-                        reviews section of an eCommerce platform using IBM NLU
+                        A C++ Bank System with withdraw, deposit, and account management functions
                     </li>
                 </ul>
                 <br>
             </div>
 
-            <div class="p3">
-                <h2 class="title-px3">Fashion Website</h2>
+            <div class="box">
+                <h2 class="proj">Caesar Cipher</h2>
                 <ul>
                     <li>
-                        Created a styled multi-paged website for a new player in the fashion industry
-                        and integrated it with a shopping cart, using stripe for payment gateway.
+                        Caesar Cipher Encrypting Program using Python
                     </li>
                 </ul>
                 <br>
@@ -111,23 +125,34 @@
 
         <section id="recommend" class="recommend">
             <h1 class="title-r">Recommendations</h1>
+            <div class="cont-box">
+                <div class="box">
+                    <p class="rec">"Collaborating with John was a game-changer; their dedication, creativity, and technical expertise transformed our vision into reality."</p>
+                </div>
 
-            <div class="rec-box">
-                <p class="rec">saddasada</p>
+                <div class="box">
+                    <p class="rec">"I've had the pleasure of working with John on multiple projects, and each time, their dedication, innovative approach, and attention to detail have truly stood out."</p>
+                </div>
+
+                <div class="box">
+                    <p class="rec">"John consistently demonstrates an impressive level of skill and dedication to their work. Their attention to detail and ability to think outside the box make them a valuable asset to any team."</p>
+                </div>
             </div>
 
             <div class="rec">
-                <h2 class="subtitle-r">Leave a Recommendation</h2>
-                <form>
-                    <fieldset>
+                <div class="box">
+                    <form>
+                        <h2 class="subtitle-r">Leave a Recommendation</h2>
                         <label for="name-r">
-                        <input type="text" id="name-r" name="name-r" placeholder="Name (Optional)"></label><br>
+                        <input type="text" class="name-r" name="name-r" placeholder="Name (Optional)"></label>
                         <label for="mes-r">
-                        <input type="text" id="mes-r" name="mes-r" placeholder="Message"></label><br>
+                        <input type="text" class="mes-r" name="mes-r" placeholder="Message"></label>
 
-                        <input type="submit" value="Submit">
-                    </fieldset>
-                </form>
+                        <div class="sub">
+                            <input class="sub-btn" type="submit" value="Submit">
+                        </div>
+                    </form>
+                </div>
             </div>
         </section>
 

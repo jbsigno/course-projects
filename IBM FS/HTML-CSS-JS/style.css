@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
     --green: #00bf63;
@@ -33,10 +34,12 @@ body, html{
 .logo .logo-n{
     color: white;
     font-weight: 900;
+    font-size: 4vh;
 }
 .logo .logo-d{
     color: var(--green);
     font-weight: 900;
+    font-size: 4vh;
 }
 
 .menu{
@@ -57,14 +60,75 @@ body, html{
 }
 
 /* BODY PART */
+
+/* >> ABOUT ME */
+.about {
+    background-color: var(--black);
+    display: flex;
+}
+
+.about .me{
+    border: 1px red solid;
+    width: 20%;
+}
+
+.about .title-t{
+
+    width: 60%;
+    padding: 0 0 0 8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title-t .t1{
+    border: 1px red solid;
+    overflow: visible;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+    color:white;
+    font-size:2.5vh;
+    width: 60%;
+}
+
+.title-t .t2{
+    padding: 0;
+    margin: 0;
+    border: 1px red solid;
+    overflow: visible;
+    font-family: "Fira Code", serif;
+    font-weight: 700;
+    color:white;
+    font-size:5vh;
+    width: 60%;
+}
+
+.title-t .t3{
+    border: 1px red solid;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    color:white;
+    font-size:2vh;
+    width: 70%;
+}
+
+/* >> SKILLS SECTION */
 .skills{
     border: 1px red solid;
     padding: var(--pad);
-
+    
 
 }
 .skills .title-s{
     border: 1px red solid;
+    color: var(--black);
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: normal;
 }
 .skills .box-cont{
     border: 1px red solid;
@@ -74,8 +138,89 @@ body, html{
 
 .box-cont .box{
     border: 1px red solid;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
+    margin: 0 50px 50px 0;
     justify-content: center;
     text-align: center;
+}
+
+/* >> PROJECT SECTION */
+.projects {
+    border: 1px red solid;
+    padding: var(--pad);
+}
+
+.projects .title-p{
+    border: 1px red solid;
+    color: var(--black);
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.projects .box{
+    border: 1px red solid;
+    width: 100%;
+}
+
+/* >> RECOMMENDATION SECTION */
+.recommend{
+    border: 1px red solid;
+    padding: var(--pad);
+}
+
+.recommend .cont-box{
+    border: 1px red solid;
+    display: flex;
+}
+
+.recommend .box{
+    border: 1px red solid;
+    width: 250px;
+}
+
+.recommend .rec{
+    border: 1px red solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rec .box{
+    width: 100%;
+    max-width: 500px; /* Optional */
+    padding: 20px;
+    border: 2px solid red;
+
+}
+
+.rec .subtitle-r{
+    border: 1px red solid;
+    width: 100%;
+}
+
+.rec .name-r{
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 0 15px 0;
+}
+
+.rec .mes-r{
+    width: 100%;
+    height: 150px;
+    box-sizing: border-box;
+    margin: 0 0 20px 0;
+}
+
+.rec .sub{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub .sub-btn{
+    font-size: 15px;
+    height: 40px;
+    width: 150px;
 }
