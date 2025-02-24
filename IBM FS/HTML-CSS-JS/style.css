@@ -4,6 +4,7 @@
 :root {
     --green: #00bf63;
     --black: #131313;
+    --pad: 0 25px;
 }
 
 body, html{
@@ -12,12 +13,14 @@ body, html{
     margin: 0;
 }
 
+/* TOP PART */
 .navbar{
     display: flex;
     padding: 0;
     border: 1px red solid;
     background-color: var(--black);
 }
+
 .logo{
     display: flex;
     border: 1px red solid;
@@ -25,7 +28,7 @@ body, html{
     font-optical-sizing: auto;
     font-style: normal;
     width: 50%;
-    padding: 0 2%;
+    padding: var(--pad);
 }
 .logo .logo-n{
     color: white;
@@ -35,6 +38,7 @@ body, html{
     color: var(--green);
     font-weight: 900;
 }
+
 .menu{
     display: flex;
     border: 1px red solid;
@@ -43,6 +47,35 @@ body, html{
     font-style: normal;
     width: 50%;
     align-self: center;
-    justify-content: center;
+    justify-content: end;
     gap: 6%;
+    padding: 0 3%;
+}
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+/* BODY PART */
+.skills{
+    border: 1px red solid;
+    padding: var(--pad);
+
+
+}
+.skills .title-s{
+    border: 1px red solid;
+}
+.skills .box-cont{
+    border: 1px red solid;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-cont .box{
+    border: 1px red solid;
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+    text-align: center;
 }
