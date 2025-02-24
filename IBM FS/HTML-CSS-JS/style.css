@@ -16,6 +16,10 @@ body, html{
     margin: 0;
 }
 
+#hl {
+    color:var(--green)
+}
+
 /* TOP PART */
 .navbar{
     display: flex;
@@ -109,7 +113,7 @@ body, html{
 .title-t .t3{
     border: 1px red solid;
     font-family: "Poppins", serif;
-    font-weight: 400;
+    font-weight: 300;
     padding: 0;
     margin: 0;
     color:white;
@@ -227,6 +231,7 @@ body, html{
     border-radius: 6px;
     padding: 0 2vh;
     flex-direction: column;
+    background-color: var(--dgray);
 }
 
 .recommend .box .q{
