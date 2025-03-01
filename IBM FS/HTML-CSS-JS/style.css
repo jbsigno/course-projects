@@ -24,13 +24,13 @@ body, html{
 .navbar{
     display: flex;
     padding: 0;
-    border: 1px red solid;
+
     background-color: var(--black);
 }
 
 .logo{
     display: flex;
-    border: 1px red solid;
+
     font-family: "League Spartan",serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -50,7 +50,7 @@ body, html{
 
 .menu{
     display: flex;
-    border: 1px red solid;
+
     font-family: "Poppins", serif;
     font-weight: 500;
     font-style: normal;
@@ -74,7 +74,7 @@ body, html{
 }
 
 .about .me{
-    border: 1px red solid;
+
     width: 20%;
 }
 
@@ -87,7 +87,7 @@ body, html{
 }
 
 .title-t .t1{
-    border: 1px red solid;
+
     overflow: visible;
     font-family: "Poppins", serif;
     font-weight: 500;
@@ -101,7 +101,7 @@ body, html{
 .title-t .t2{
     padding: 0;
     margin: 0;
-    border: 1px red solid;
+
     overflow: visible;
     font-family: "Fira Code", serif;
     font-weight: 700;
@@ -111,7 +111,7 @@ body, html{
 }
 
 .title-t .t3{
-    border: 1px red solid;
+
     font-family: "Poppins", serif;
     font-weight: 300;
     padding: 0;
@@ -123,11 +123,11 @@ body, html{
 
 /* >> SKILLS SECTION */
 .skills{
-    border: 1px red solid;
+
     padding: 5vh;
 }
 .skills .title-s{
-    border: 1px red solid;
+
     color: var(--black);
     font-family: "League Spartan",serif;
     font-weight: 800;
@@ -136,7 +136,7 @@ body, html{
     margin: 0;
 }
 .skills .box-cont{
-    border: 1px red solid;
+
     display: flex;
     flex-wrap: wrap;
     margin: 0;
@@ -174,7 +174,7 @@ body, html{
 
 /* >> PROJECT SECTION */
 .projects {
-    border: 1px red solid;
+
     padding: 5vh;
 }
 
@@ -199,7 +199,8 @@ body, html{
 
 /* >> RECOMMENDATION SECTION */
 .recommend{
-    border: 1px red solid;
+    display: flex;
+    flex-direction: column;
     padding: var(--pad);
     background-color: var(--black);
 }
@@ -211,7 +212,6 @@ body, html{
 }
 
 .recommend .cont-box{
-    border: 1px red solid;
     display: flex;
     flex-wrap: wrap;
     font-family: "Poppins", serif;
@@ -255,7 +255,7 @@ body, html{
     font-size: small;
     font-style: italic;
     margin: 0 0 3vh 0;
-    border: 1px red solid;
+
 }
 
 .recommend .rect{
