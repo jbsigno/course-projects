@@ -287,6 +287,7 @@ body, html{
     box-sizing: border-box;
     margin: 0 0 15px 0;
     background-color: var(--lgray);
+    color: white;
 }
 
 .rect .mes-r{
@@ -295,6 +296,7 @@ body, html{
     box-sizing: border-box;
     margin: 0 0 20px 0;
     background-color: var(--lgray);
+    color: white;
 }
 
 .rect .sub{
