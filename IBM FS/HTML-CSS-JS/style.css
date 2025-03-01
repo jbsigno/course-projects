@@ -224,9 +224,7 @@ body, html{
     border: 1px white solid;
     width: 40vh;
     max-width: 50vh;
-    margin: 3vh 3vh 0 0;
-    justify-content: center;
-    align-items: center;
+    margin: 0vh 3vh 0 0;
     display: flex;
     border-radius: 6px;
     padding: 0 2vh;
@@ -247,7 +245,17 @@ body, html{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 0 4vh 0;
+    margin: 0;
+}
+
+.recommend .box .auth-r{
+    display: flex;
+    justify-content: flex-end;
+    font-weight: 600;
+    font-size: small;
+    font-style: italic;
+    margin: 0 0 3vh 0;
+    border: 1px red solid;
 }
 
 .recommend .rect{
