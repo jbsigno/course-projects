@@ -1,3 +1,7 @@
+<!-- MADE BY JOHN BENEDICT C. SIGNO -->
+<!-- FEBRUARY 2025 -->
+<!-- PART OF THE COURSERA COURSE -->
+<!-- Assets: https://worldvectorlogo.com -->
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -20,6 +24,8 @@
                 <a href="#recommend">Recommendations</a>
             </div>
         </nav>
+
+        <button id="homeBtn" onclick="scrollToTop()"><img id="home-logo" src="https://www.pngplay.com/wp-content/uploads/7/Home-Logo-Transparent-Background.png"/></button>
 
         <section id="about" class="about">
             <div class="title-t">
@@ -50,6 +56,12 @@
                 </div>
 
                 <div class="box">
+                    <img class="b-img" src="https://cdn.worldvectorlogo.com/logos/logo-javascript.svg"/>
+                    <h2 class="b-name">JavaScript</h2>
+                    <p class="b-desc">1.5 years experience</p>
+                </div>
+
+                <div class="box">
                     <img class="b-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/200px-PHP-logo.svg.png" style="width: 95%;"/>
                     <h2 class="b-name">PHP</h2>
                     <p class="b-desc">4 years experience</p>
@@ -59,12 +71,6 @@
                     <img class="b-img" src="https://cdn.worldvectorlogo.com/logos/c.svg"/>
                     <h2 class="b-name">C++</h2>
                     <p class="b-desc">3 years experience</p>
-                </div>
-
-                <div class="box">
-                    <img class="b-img" src="https://cdn.worldvectorlogo.com/logos/logo-javascript.svg"/>
-                    <h2 class="b-name">JavaScript</h2>
-                    <p class="b-desc">1.5 years experience</p>
                 </div>
 
                 <div class="box">
@@ -158,6 +164,12 @@
                     <div class="sub">
                         <button onclick="addRec()" class="sub-btn">Submit</button>
                     </div>
+
+                    <div id="popup" class="popup">
+                        <p>Thank you for your recommendation!</p>
+                        <button onclick="closePopup()">OK</button>
+                    </div>
+                    
                 </div>
             </div>
         </section>

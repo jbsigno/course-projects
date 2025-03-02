@@ -64,6 +64,10 @@ body, html{
     text-decoration: none;
     color: white;
 }
+.menu a:hover{
+    font-weight: 800;
+    text-decoration: underline;
+}
 
 /* BODY PART */
 
@@ -101,7 +105,6 @@ body, html{
 .title-t .t2{
     padding: 0;
     margin: 0;
-
     overflow: visible;
     font-family: "Fira Code", serif;
     font-weight: 700;
@@ -111,7 +114,6 @@ body, html{
 }
 
 .title-t .t3{
-
     font-family: "Poppins", serif;
     font-weight: 300;
     padding: 0;
@@ -123,7 +125,6 @@ body, html{
 
 /* >> SKILLS SECTION */
 .skills{
-
     padding: 5vh;
 }
 .skills .title-s{
@@ -136,7 +137,6 @@ body, html{
     margin: 0;
 }
 .skills .box-cont{
-
     display: flex;
     flex-wrap: wrap;
     margin: 0;
@@ -174,7 +174,6 @@ body, html{
 
 /* >> PROJECT SECTION */
 .projects {
-
     padding: 5vh;
 }
 
@@ -224,7 +223,7 @@ body, html{
     border: 1px white solid;
     width: 40vh;
     max-width: 50vh;
-    margin: 0vh 3vh 0 0;
+    margin: 0vh 3vh 3vh 0;
     display: flex;
     border-radius: 6px;
     padding: 0 2vh;
@@ -254,7 +253,7 @@ body, html{
     font-weight: 600;
     font-size: small;
     font-style: italic;
-    margin: 0 0 3vh 0;
+    margin: 3vh 0 3vh 0;
 
 }
 
@@ -266,7 +265,6 @@ body, html{
 }
 
 .rect .box{
-    
     width: 100%;
     max-width: 100vh; /* Optional */
     margin: 9vh 0 0 0;
@@ -276,7 +274,6 @@ body, html{
 }
 
 .rect .subtitle-r{
-
     width: 100%;
     font-family: "Poppins", serif;
     color: white;
@@ -288,6 +285,7 @@ body, html{
     margin: 0 0 15px 0;
     background-color: var(--lgray);
     color: white;
+    border: none;
 }
 
 .rect .mes-r{
@@ -297,6 +295,7 @@ body, html{
     margin: 0 0 20px 0;
     background-color: var(--lgray);
     color: white;
+    border: none;
 }
 
 .rect .sub{
@@ -309,4 +308,88 @@ body, html{
     font-size: 15px;
     height: 40px;
     width: 150px;
+    border: none;
+    background-color: var(--green);
+}
+
+.sub .sub-btn{
+    font-size: 15px;
+    height: 40px;
+    width: 150px;
+    background-color: var(--green);
+}
+.sub .sub-btn:hover{
+    background-color: #00fb84;
+}
+
+
+/* -->> POPUP MESSAGE */
+.popup {
+    display: none; /* Initially hidden */
+    font-family: "Poppins",serif;
+    position: fixed;
+    height: 20vh;
+    width: 100vh;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--green);
+    color: var(--dgray);
+    font-weight: 500;
+    padding: 3vh 1vh;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 25px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.popup.show {
+    display: block;
+    opacity: 1;
+}
+
+.popup button {
+    margin: 0 0 0 0;
+    width: 50vh;
+    padding: 8px 12px;
+    color: white;
+    background-color: var(--dgray);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.popup button:hover {
+    background-color: var(--lgray);
+}
+
+/* FLOATING HOME BUTTON */
+#homeBtn {
+    display: none; /* Hidden by default */
+    position: fixed;
+    width: 10vh;
+    height: 10vh;
+    bottom: 5vh;
+    right: 5vh;
+    background-color: var(--green);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 100vh;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease-in-out;
+}
+
+#homeBtn:hover {
+    background-color: #00fb84;
+}
+
+#home-logo{
+    width: 80%;
 }
